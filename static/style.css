@@ -1,0 +1,102 @@
+body {
+    background: url('./images/wood.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    margin-top: 50px;
+}
+table {
+border-collapse: collapse;
+}
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+form {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+}
+.white {
+    background-color: #f0d9b5;
+}
+.black {
+    background-color: #b58863;
+}
+button {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none; 
+    display: flex;
+    justify-content: center;
+}
+.chessboard {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.result {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.history {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    height: 500px;
+    overflow-y: auto;
+}
+.history ul {
+    list-style: none;
+    padding: 0;
+
+}
+.info {
+    margin-left: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 500px;
+    padding: 10px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+.chess_history {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+.chess_history tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+.chess_history td {
+    height: auto;
+    width: 50%;
+}
+.reset {
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    background-color: #b58863;
+    border: none;
+    font-size: 20px;
+    margin-top: auto; 
+    bottom: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.reset:hover {
+    background-color: #d4a27d;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Szachy</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div>
+      <form action="/move" method="post">
+          {{board}}
+      </form>
+    </div>
+    <div class="info">
+      <div class="history">
+          {{history}}
+      </div>
+      <p class="result">{{result}}</p>
+      <button class="reset" onclick="window.location.href='/reset'">Reset</button>
+    </div>
+  </body>
+</html>
